@@ -1,0 +1,37 @@
+1.) Scenario: Login with Instagram with valid credentials:
+Given user is able to open instagram app
+When user enters valid username and password
+And user clicks on log in button
+The user is navigated to profile homepage
+
+2.) Scenario: Signing out of Amazon account
+Give user is logged into Amazon account on Chrome browser
+When user hovers over Account and List with their cursor menu will drop down
+And user will click on Sign Out button
+Then user is navigated to login page
+
+3.) Scenario: Updating resume on Indeed
+Given user is signed in to Indeed application on Chrome browser
+And user clicks on man icon
+And clicks on profile
+And clicks on Indeed resume
+And clicks on pencil icon and edits user's resume
+and user press save
+Then user will see the updated version of users resumes
+
+4.) Scenario: Invalid login credentials into Jira
+Given user is able to open Jira application on Chrome browser
+When user enters invalid username and password
+And clicks on log in
+Then "Sorry, your username and password are incorrect - please try again" message will prompt
+
+5.) Scenario: Creating Netflix Account
+Given user is able to open Netflix application on Chrome browser
+When user clicks on get started
+And clicks next on "Choose your plan" page
+And clicks on a plan and next
+And clicks on next on "Finish setting up your account" page
+And enters new email and password and clicks next
+And user clicks on payment method
+And user clicks on Start Membership
+Then user is brought to Netflix home page
