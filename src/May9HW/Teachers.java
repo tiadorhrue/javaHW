@@ -18,4 +18,9 @@ public class Teachers {
     void dismissClass(){
         System.out.println("Class is over");
     }
+
+    void m1(){ m2();} void m2(){}
+
+
+
 }
